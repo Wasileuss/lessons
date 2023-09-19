@@ -1,0 +1,77 @@
+@import url('reset.css');
+
+* {
+    color: green;
+}
+
+h1 {
+    color: blue;
+}
+
+#title {
+    color: fuchsia;
+}
+
+h2 {
+    color: red;
+}
+
+.history__title {
+    color: deepskyblue;
+}
+
+h3 {
+    color: darkorchid;
+}
+
+li {
+    color: tomato;
+}
+
+.header li {
+    color: darkgoldenrod;
+}
+
+p {
+    color: indigo;
+}
+
+span {
+    color: darkblue;
+}
+
+div p {
+    color: greenyellow;
+}
+
+.text {
+    color: darkcyan;
+}
+
+.program p {
+    color: royalblue;
+}
+
+.history .text {
+    color: brown;
+}
+
+.footer__list-link {
+    color: yellow;
+}
+
+.footer a {
+    color: deepskyblue;
+}
+
+.program li {
+    color: blue;
+}
+
+.program__list > li {
+    color: crimson;
+}
+
+.footer span {
+    color: orange;
+}
