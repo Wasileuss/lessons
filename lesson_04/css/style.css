@@ -32,6 +32,14 @@ li {
     color: darkgoldenrod;
 }
 
+.header__contacts > li {
+    color: coral;
+}
+
+.header__contacts-item {
+    color: blue;
+}
+
 p {
     color: indigo;
 }
@@ -74,4 +82,12 @@ div p {
 
 .footer span {
     color: orange;
+}
+
+.text ~ p {
+    color: khaki;
+}
+
+.text + p {
+    color: red;
 }
