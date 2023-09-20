@@ -36,7 +36,7 @@ li {
     color: coral;
 }
 
-.header__contacts-item {
+.header__contacts-item ~ li {
     color: blue;
 }
 
@@ -90,4 +90,8 @@ div p {
 
 .text + p {
     color: red;
+}
+
+.program__list-item ~ li {
+    color: green;
 }
