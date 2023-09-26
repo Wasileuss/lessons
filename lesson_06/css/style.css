@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@100;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+@import url('reset.css');
+
+:root {
+    --ff-main: "Inter", sans-serif;
+    --ff-second: "Poppins", sans-serif;
+    --ff-third: "DM Serif Text", serif;
+    --color-main: #7D7D7D;
+    --color-second: #353535;
+    --color-green: #40DDB6;
+    --color-blue: #6B77E5;
+    --color-bg: #FFF9F4;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1600px;
+}
+
+h1 {
+    font-family: var(--ff-third);
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 2;
+    color: var(--color-main);
+   background-color: var(--color-bg);
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.7;
+    color: var(--color-blue);
+    background-color: var(--color-green);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.consulting {
+    max-width: 716px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.hero img {
+    margin-bottom: 24px;
+}
+
+.hero h3 {
+    color: #37393F;
+    font-family: var(--ff-second);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 10px;
+}
+
+.hero h4 {
+    color: var(--color-blue);
+    font-family: var(--ff-second);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin: 42px 0 12px;
+
+}
+
+p {
+    color: var(--color-main);
+    font-family: var(--ff-main);
+    font-size: 18px;
+    line-height: 1.46;
+}
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.image-box,
+.benefits-list {
+    display: inline-block;
+}
+
+.benefits-list {
+    max-width: 332px;
+    margin-left: 29px;
+    vertical-align: top;
+}
+
+.benefits-list ul {
+    margin-left: 20px;
+}
+
+.benefits h4 {
+    color: #37393F;
+    font-family: var(--ff-second);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 127%;
+    margin-bottom: 15px;
+}
+
+.benefits h5 {
+    color: var(--color-green);
+    font-family: var(--ff-second);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 127%;
+    margin-bottom: 24px;
+}
+
+.benefits li {
+    list-style-type: circle;
+    font-size: 18px;
+    line-height: 1.27;
+    color: var(--color-main);
+    margin-bottom: 35px;
+}
+
+.jewellery {
+    background-color: var(--color-bg);
+}
+
+.jewellery-block {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.what-we-do,
+.image-container {
+    display: inline-block;
+}
+
+.what-we-do {
+    max-width: 560px;
+    margin: 140px 35px 140px 0;
+    vertical-align: top;
+}
+
+.image-container {
+    margin: 140px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 272px;
+}
+
+.image-container img + img {
+    margin-left: 20px;
+}
+
+.jewellery h4 {
+    color: #D06B00;
+    font-family: var(--ff-main);
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.jewellery h3 {
+    color: #0E333D;
+    font-family: var(--ff-third);
+    font-size: 59px;
+    line-height: 1.47;
+    margin-bottom: 25px;
+}
+
+.jewellery p {
+    color: #474747;
+    font-family: var(--ff-main);
+    font-size: 20px;
+    line-height: 1.8; 
+}
+
+footer {
+    color: var(--color-second);
+}
+
+footer a {
+    font-weight: 500;
+    font-style: italic;
+    color: var(--color-blue);
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 50px;
+}
