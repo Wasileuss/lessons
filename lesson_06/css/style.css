@@ -140,12 +140,13 @@ p {
 
 .what-we-do {
     max-width: 560px;
-    margin: 140px 35px 140px 0;
+    margin: 140px 38px 140px 0;
     vertical-align: top;
 }
 
 .image-container {
     margin: 140px 0;
+    font-size: 0;
 }
 
 .image-container img {
@@ -154,7 +155,7 @@ p {
 }
 
 .image-container img + img {
-    margin-left: 20px;
+    margin-left: 22px;
 }
 
 .jewellery h4 {
