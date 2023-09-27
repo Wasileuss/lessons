@@ -16,8 +16,7 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    max-width: 1600px;
+    font-family: var(--ff-main);
 }
 
 h1 {
@@ -28,7 +27,7 @@ h1 {
     letter-spacing: 5px;
     line-height: 2;
     color: var(--color-main);
-   background-color: var(--color-bg);
+    background-color: var(--color-bg);
     text-align: center;
 }
 
@@ -62,14 +61,17 @@ h2 {
     margin-bottom: 10px;
 }
 
+.hero h3 + p {
+    margin-bottom: 42px;
+}
+
 .hero h4 {
     color: var(--color-blue);
     font-family: var(--ff-second);
     font-size: 20px;
     font-weight: 600;
     line-height: 1.27;
-    margin: 42px 0 12px;
-
+    margin-bottom: 12px;
 }
 
 p {
@@ -88,9 +90,12 @@ p {
     display: inline-block;
 }
 
+.image-box {
+    margin-right: 29px;
+}
+
 .benefits-list {
     max-width: 332px;
-    margin-left: 29px;
     vertical-align: top;
 }
 
@@ -154,8 +159,8 @@ p {
     max-width: 272px;
 }
 
-.image-container img + img {
-    margin-left: 22px;
+.image-container img:not(:last-child) {
+    margin-right: 22px;
 }
 
 .jewellery h4 {
