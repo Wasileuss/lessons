@@ -57,7 +57,8 @@ body {
 
 .fashion__left {
     max-width: 614px;
-    background: url(../img/fashion-bg-left.png) no-repeat;
+    background: url(../img/fashion-bg-left.png) center / cover no-repeat;
+    border-radius: 15px 0 0 15px;
 }
 
 .fashion__left-content {
@@ -97,7 +98,8 @@ body {
 .fashion__right {
     max-width: 626px;
     width: 100%;
-    background: url(../img/fashion-bg-right.png) no-repeat;
+    background: url(../img/fashion-bg-right.png) center / cover no-repeat;
+    border-radius: 0 15px 15px 0;
     vertical-align: top;
 }
 
@@ -163,7 +165,6 @@ body {
 
 .projects-img {
     min-height: 500px;
-    max-width: 100%;
     margin-bottom: 24px
 }
 
