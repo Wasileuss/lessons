@@ -1,0 +1,252 @@
+.game {
+    margin: 25px auto;
+    padding: 25px;
+    width: 1100px;
+    height: 670px;
+    border: 3px solid #fff700;
+    /* background-color: #8a2be2; */
+    background: url('../img/bg-trees.jpg') repeat;
+    border-radius: 20px;
+    font-size: 0;
+    transition: all 1s;
+}
+
+.game p {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-shadow: -5px -5px 8px #ff0000;
+    color: #ffa500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.game div {
+    background-color: #fff700;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 40px solid #ff0000;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.line-1 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.line-1:hover + .line-2,
+.line-2:hover {
+    visibility: visible;
+}
+.line-2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
+}
+
+.line-2:hover + .line-3,
+.line-3:hover {
+    visibility: visible;
+}
+
+.line-3 {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    visibility: hidden;
+}
+
+.line-3:hover + .line-4,
+.line-4:hover {
+    visibility: visible;
+}
+
+.line-4 {
+    display: inline-block;
+    width: 40px;
+    height: 120px;
+    vertical-align: top;
+    visibility: hidden;
+}
+
+.line-4:hover + .line-5,
+.line-5:hover {
+    visibility: visible;
+}
+
+.line-5 {
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    vertical-align: bottom;
+    visibility: hidden;
+}
+
+.line-5:hover + .line-6,
+.line-6:hover {
+    visibility: visible;
+}
+
+.line-6 {
+    display: inline-block;
+    width: 20px;
+    height: 120px;
+    vertical-align: top;
+    visibility: hidden;
+}
+
+.line-6:hover + .line-7,
+.line-7:hover {
+    visibility: visible;
+}
+
+.line-7 {
+    display: inline-block;
+    width: 560px;
+    height: 40px;
+    visibility: hidden;
+}
+
+.line-7:hover + .line-8,
+.line-8:hover {
+    visibility: visible;
+}
+
+.line-8 {
+    display: inline-block;
+    width: 40px;
+    height: 120px;
+    vertical-align: top;
+    visibility: hidden;
+}
+
+.line-8:hover ~ .line-10,
+.line-10:hover {
+    visibility: visible;
+}
+
+.line-9 {
+    display: inline-block;
+    width: 1000px;
+    height: 80px;
+    visibility: hidden;
+}
+.line-10 {
+    display: inline-block;
+    width: 40px;
+    height: 80px;
+    visibility: hidden;
+}
+
+.line-10:hover ~ .line-12,
+.line-12:hover {
+    visibility: visible;
+}
+
+.line-11 {
+    display: inline-block;
+    width: 400px;
+    height: 25px;
+    visibility: hidden;
+}
+
+.line-12 {
+    display: inline-block;
+    width: 640px;
+    height: 25px;
+    visibility: hidden;
+}
+
+.line-13 {
+    display: inline-block;
+    width: 400px;
+    height: 120px;
+    visibility: hidden;
+}
+
+.line-12:hover ~ .line-14,
+.line-14:hover {
+    visibility: visible;
+}
+
+.line-14 {
+    display: inline-block;
+    width: 20px;
+    height: 120px;
+    visibility: hidden;
+}
+
+.line-14:hover ~ .line-15,
+.line-15:hover {
+    visibility: visible;
+}
+
+.line-15 {
+    display: block;
+    width: 420px;
+    height: 30px;
+    visibility: hidden;
+}
+
+.line-15:hover ~ .line-16,
+.line-16:hover {
+    visibility: visible;
+}
+
+.line-16 {
+    display: block;
+    width: 40px;
+    height: 120px;
+    visibility: hidden;
+}
+
+.line-16:hover ~ .line-17,
+.line-17:hover {
+    visibility: visible;
+}
+
+.line-17 {
+    display: inline-block;
+    width: 580px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.line-17:hover ~ .line-18,
+.line-18:hover {
+    visibility: visible;
+}
+.line-18 {
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.line-18:hover + .line-19,
+.line-19:hover {
+    visibility: visible;
+}
+
+.line-19 {
+    font-size: 30px;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 5px 5px 8px #ff0000,  -5px -5px 8px #2be2b7;;
+    width: 420px;
+    height: 60px;
+    vertical-align: top;
+    visibility: hidden;
+}
+
+.game .line-19 {
+    background-color: #6B77E5;
+}
