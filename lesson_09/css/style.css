@@ -357,10 +357,11 @@ body {
 
 .process__content {
     font-size: 0;
-    padding-top: 36px;
+    /* padding-top: 36px; */
 }
 
 .process__content__item {
+    margin-top: 36px;
     display: inline-block;
     max-width: 386px;
     width: 100%;
