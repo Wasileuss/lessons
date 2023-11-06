@@ -464,7 +464,6 @@ body {
 .member__info {
     position: absolute;
     width: 341px;
-    height: 114px;
     background-color: var(--color-white);
     bottom: 22px;
     left: 22px;
