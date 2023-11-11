@@ -1,0 +1,556 @@
+@import url('reset.css');
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,500;0,600;0,700;1,700&display=swap');
+
+:root {
+    --ff-main: "Inter", sans-serif;
+    --ff-second: "Poppins", sans-serif;
+    --ff-third: 'Cormorant Infant', serif;
+    --color-main: #7D7D7D;
+    --color-second: #353535;
+    --color-title: #37393F;
+    --color-black: #000000;
+    --color-brown: #78473b;
+    --color-white: #ffffff;
+    --color-green: #40DDB6;
+    --color-gray: #dadada;
+    --color-blue: #6B77E5;
+    --color-pink: #ee82ee;
+    --color-orange: #f6ad2d;
+    --color-shadow: #5c5c5c;
+    --color-border: #E3E3E3;
+    --color-bg: #e0a07e;
+    --color-bg-second: #598093;
+    --color-bg-third: #7a956b;
+    --color-back: #F4F4F4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-main);
+    color: var(--color-black);
+    font-size: 18px;
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.header {
+    border-bottom: 3px solid var(--color-blue);
+    background-image: url('../img/bg_repeat.jpg');
+    margin-bottom: 50px;
+}
+
+.header__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--color-title);
+    padding: 30px 0 10px;
+}
+
+.header__link {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-blue);
+    transition: color .3s;
+    padding: 20px;
+}
+
+.header__link a:hover {
+    color: #4c0cac;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+/* ------Practice---------- */
+
+.practice {
+    max-width: 1200px;
+    min-height: 40vh;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.practice__block {
+    position: relative;
+    margin: 0 auto;
+    max-width: 750px;
+    height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 2px var(--color-blue) inset;
+}
+
+.block:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.block__jump {
+    border-radius: 50%;
+    background-color: var(--color-green);
+    left: calc(50% - 50px);
+    animation-name: jump;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.block__table {
+    bottom: 0;
+    left: calc(50% - 50px);
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-blue);
+}
+
+@keyframes jump {
+    from {
+        bottom: 200px;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        bottom: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        bottom: 200px;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        bottom: 97px;
+        animation-timing-function: ease-in;
+    }
+    to {
+        bottom: 200px;
+    }
+}
+
+.block__transform {
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    background-color: var(--color-pink);
+    animation: transform 2s ease-out 1s infinite alternate;
+}
+
+.block__transform:hover{
+    animation-play-state: paused;
+}
+
+@keyframes transform {
+    0% {
+      border-radius: 0 0 0 0;
+      transform: rotate(0deg);
+    }
+    25%{
+      border-radius: 50% 0 0 0;
+      transform: rotate(45deg);
+    }
+    50%{
+      border-radius: 50% 50% 0 0;
+      transform: rotate(90deg);
+    }
+    75%{
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(135deg);
+    }
+    100%{
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(180deg);
+    }
+}
+
+.block__vibrate {
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border-radius: 20px;
+    background-color: var(--color-bg);
+    animation: vibrate 1s ease infinite;
+}
+
+
+@keyframes vibrate {
+    30% {
+        transform: scale(1.2);
+    }
+    40%, 60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.block__fly {
+    border-radius: 50%;
+    background-color: var(--color-green);
+    left: 0;
+    top: calc(50% - 50px);
+    animation: fly 2s ease infinite;
+}
+
+@keyframes fly {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.block__rotate {
+    background: var(--color-orange);
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: bounceAround 1.1s ease-in-out infinite;
+}
+
+@keyframes bounceAround {
+    0% {
+        transform:translateY(0);
+    }
+    20% {
+        transform:translateY(-60px) rotate(0deg);
+    }
+    25% {
+        transform:translateY(20px) rotate(0deg);
+    }
+    35%, 55% {
+        transform:translateY(0px) rotate(0deg);
+    }
+    60% {
+        transform: translateY(-20px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(360deg);
+    }
+  }
+
+/* ------Car---------- */
+
+.car {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    border: 3px solid var(--color-blue);
+    border-radius: 30px;
+    height: 70vh;
+    overflow: hidden;
+    background: url('../img/road.webp') 0 0 / 100% 100% no-repeat;
+}
+
+.car__constructor {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    top: 63%;
+    right: -100%;
+    transition: all 0.5s;
+    animation: car 7s ease 1 normal running 2s forwards;
+}
+
+@keyframes car {
+    0% {
+        left: 100%;
+    }
+    25% {
+        left: 60%;
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        
+        left: -100%;
+    }
+}
+
+.car__wheel {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: var(--color-bg-second);
+    outline: 2px dashed var(--color-black);
+    border: 10px solid var(--color-black);
+    border-radius: 50%;
+    bottom: -25px;
+    z-index: 4;
+    transition: all 1s linear;
+    
+}
+
+.car__wheel--forward {
+    left: 50px;
+    animation: 2s wheel-rotate 5 linear reverse 2s;
+}
+
+.car__wheel--back {
+    right: 40px;
+    animation: 2s wheel-rotate 5 linear reverse 2s;
+}
+
+@keyframes wheel-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.car__bolts {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    outline: 7px dotted var(--color-black);
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+}
+
+.car__forward {
+    position: absolute;
+    background-color: var(--color-green);
+    width: 120px;
+    height: 60px;
+    bottom: 0;
+    left: -10px;
+    border-radius: 100% 10% 10% 100% / 73% 10% 10% 10%;
+    z-index: 3;
+    border-bottom: 20px solid var(--color-blue);
+    border-top: 5px solid var(--color-blue);
+}
+
+.car__body {
+    position: absolute;
+    background-color: var(--color-green);
+    width: 200px;
+    height: 55px;
+    left: 100px;
+    bottom: 0;
+    z-index: 2;
+    border-bottom: 20px solid var(--color-blue);
+}
+
+.car__top {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 90px;
+    top: -50px;
+    border-radius: 55% 30% 10% 0% / 100% 100% 10% 10%  ;
+    z-index: 3;
+}
+
+.car__back {
+    position: absolute;
+    background-color: var(--color-green);
+    width: 100px;
+    height: 65px;
+    right: 0;
+    bottom: 0;
+    border-radius: 0% 97% 63% 0% / 1% 55% 19% 1% ;
+    z-index: 2;
+    border-bottom: 20px solid var(--color-blue);
+    border-top: 5px solid var(--color-blue);
+}
+
+.car__front-light {
+    position: absolute;
+    background-color: #ffffc3;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    border-radius: 100% 34% 93% 20% / 72% 0% 94% 22% ;
+    box-shadow: -15px 3px 15px var(--color-white);
+    z-index: 3;
+}
+
+.car__back-light {
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 0;
+    border-radius: 100% 100% 25% 100% / 0% 100% 0% 71% ;
+    box-shadow: 20px 3px 15px #ff0000;
+    z-index: 3;
+}
+
+.window__wind {
+    position: absolute;
+    background-color: var(--color-border);
+    width: 10px;
+    height: 40px;
+    bottom: 10px;
+    left: 30px;
+    border-right: 5px solid var(--color-blue);
+    border-radius: 100% 10% 88% 0% / 94% 10% 94% 10% ;
+    z-index: 2;
+    transform: skew(-50deg);
+}
+
+.window__front {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    top: 3px;
+    left: 8px;
+    z-index: 2;
+    border-radius: 100% 0% 0% 0% / 100% 0% 0% 0% ;
+    
+}
+
+.window__back {
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    top: 3px;
+    right: 8px;
+    z-index: 2;
+    border-radius: 0% 56% 0% 1% / 100% 100% 0% 0% ;
+}
+
+.window__mirror {
+    position: absolute;
+    background-color: var(--color-second);
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    z-index: 3;
+    border-radius: 100% 0% 0% 0% / 100% 62% 0% 0%  ;
+}
+
+.car__turn-light {
+    position: absolute;
+    background-color: orange;
+    width: 15px;
+    height: 8px;
+    top: 10px;
+    right: 20px;
+    border-radius: 52% 24% 49% 29% / 98% 0% 85% 0%  ;
+    z-index: 3;
+}
+
+.window__driver {
+    position: absolute;
+    background: url('../img/driver.svg') 0 0 / 100% 100% no-repeat;
+    width: 80px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.car__start {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    border: 1px solid var(--color-white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+}
+
+/* ------Footer------- */
+
+.footer {
+    color: var(--color-title);
+    border-top: 3px solid var(--color-blue);
+    margin: 0 auto;
+    width: 100%;
+    background-image: url('../img/bg_repeat.jpg');
+}
+
+.footer__container {
+    max-width: 1200px;
+}
+
+.footer__logo {
+    display: inline-block;   
+    margin-right: 25vw;
+}
+
+.footer__logo img {
+    vertical-align: middle;
+}
+
+.footer__info {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.4;
+    padding-left: 20px;
+}
+
+.footer__info a {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+}
+
+.footer__info a:hover {
+    color: #4c0cac;
+    border-bottom: 2px solid #4c0cac;
+}
+
+.footer__validator {
+    text-align: center;
+}
+
+.footer__info *:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footer__info p:last-child::before {
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin: 0 5px -3px 0;
+    background: url('../img/circle-c.svg') center / contain no-repeat;
+}
