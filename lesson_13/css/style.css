@@ -120,52 +120,52 @@ body {
     background-color: var(--color-white);
 }
 
-.practice__translate:hover {
+.practice__item:hover .practice__translate {
     transform: translate(50px, 100px);
 }
 
-.practice__translate-x:hover {
+.practice__item:hover .practice__translate-x {
    transform: translateX(-50px);
 }
 
-.practice__translate-y:hover {
+.practice__item:hover .practice__translate-y {
    transform: translateY(-50px);
 }
 
-.practice__translate-per:hover {
+.practice__item:hover .practice__translate-per {
     transform: translate(-50%, -70%);
 }
 
-.practice__scale-minus:hover {
+.practice__item:hover .practice__scale-minus {
    transform: scale(0.5);
 }
 
-.practice__scale-plus:hover {
+.practice__item:hover .practice__scale-plus {
    transform: scale(1.5);
 }
 
-.practice__scale-x:hover {
+.practice__item:hover .practice__scale-x {
    transform: scaleX(1.5)
 }
 
-.practice__scale-y:hover {
+.practice__item:hover .practice__scale-y {
    transform: scaleY(2)
 }
 
-.practice__rotate:hover {
+.practice__item:hover .practice__rotate {
     transform: rotate(60deg);
 }
 
-.practice__origin:hover {
+.practice__item:hover .practice__origin {
     transform-origin: right top;
     transform: rotate(90deg);
 }
 
-.practice__skew:hover {
+.practice__item:hover .practice__skew {
     transform: skew(60deg, -10deg);
 }
 
-.practice__multiple:hover {
+.practice__item:hover .practice__multiple {
     transform: matrix(-1.00, 0.00, -0.00, -1.00, -430, 0);
 }
 
@@ -174,12 +174,12 @@ body {
    perspective: 200px;
 }
 
-.practice__3d:hover {
+.practice__item:hover .practice__3d {
    transform: translate3d(0, 50px, 80px);
    transform: rotateX(55deg);
 }
 
-.practice__rotate3d:hover {
+.practice__item:hover .practice__rotate3d {
    transform: rotate3d(0, 1, 1, 90deg);
 }
 
@@ -207,11 +207,11 @@ body {
 	transform: rotateY(-180deg);
 }
 
-.flip:hover .flip__back {
+.practice__item:hover .flip__back {
 	transform: rotateY(0deg);
 }
 
-.flip:hover .flip__front {
+.practice__item:hover .flip__front {
 	transform: rotateY(180deg);
 }
 
