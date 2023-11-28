@@ -567,12 +567,22 @@ body {
     gap: 28px 30px;
 }
 
-.payment__inputs input {
+.inputs__input {
     width: 100%;
-    flex: 0 1 337px;
-    padding: 18px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 337px; 
+}
+
+.inputs__input input {
+    width: 100%;
+    height: 52px;
     border-radius: 8px;
     border: 1px solid #3C4242;
+}
+
+.inputs__input input::placeholder {
+    padding-left: 20px;
 }
 
 .check-out__container input::placeholder {
@@ -587,6 +597,25 @@ body {
 
 .button--check {
     padding: 16px 20px;
+}
+
+.inputs__input {
+    position: relative;
+}
+
+.inputs__eye {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    right: 20px;
+    content: '';
+    background: url('../img/icons/eye.svg') center no-repeat;
+}
+
+.inputs__eye:active {
+    background: url('../img/icons/hide.svg') center no-repeat;
 }
 
 /* -------------------- */
@@ -609,7 +638,7 @@ body {
 }
 
 .radio__input--custom:checked + .radio__label--custom::before {
-	background: url('../img/icons/radio.svg') center no-repeat;
+	background: url('../img/icons/radio.svg') 3px 3px no-repeat;
 }
 
 .radio__label--custom {
