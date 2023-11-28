@@ -569,8 +569,6 @@ body {
 
 .inputs__input {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     flex: 0 1 337px; 
 }
 
