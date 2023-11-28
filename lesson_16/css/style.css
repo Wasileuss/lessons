@@ -577,9 +577,6 @@ body {
     height: 52px;
     border-radius: 8px;
     border: 1px solid #3C4242;
-}
-
-.inputs__input input::placeholder {
     padding-left: 20px;
 }
 
