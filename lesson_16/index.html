@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form My Info</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+			<div class="header__container">
+                <div class="header__contant">
+                    <a class="header__logo" href="#">
+                        <img src="img/header/logo.svg" alt="Logo">
+                    </a>
+                    <div class="header__search">
+                        <input class="header__input" placeholder="Search">
+                    </div>
+                    <ul class="header__lang lang">
+                        <li>
+                            <a href="#">English (United States)</a>
+                            <ul class="lang__list">
+                                <li class="lang__item"><a href="#">Ukrainian (Ukraine)</a></li>
+                                <li class="lang__item"><a href="#">Dutch (Nederlands)</a></li>
+                                <li class="lang__item"><a href="#">German (Germany)</a></li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__buttons">
+                    <a href="#" class="header__button button button--primary">Login</a>
+                    <a href="#" class="header__button button button--secondary">Sign Up</a>
+                </div>
+            </div>
+		</header>
+
+		<main class="main">
+            <div class="page-nav nav">
+                <div class="nav__container">
+                    <a href="index.html" class="button">My Info</a>
+                    <a href="form-checkout.html" class="button">Check Out</a>
+                    <a href="form-contactus.html" class="button">Contact Us</a>
+                </div>
+            </div>
+            <div class="my-info">
+                <div class="my-info__container info">
+                    <h2 class="info__title">My Info</h2>
+                    <h3 class="info__subtitle">Add Address</h3>
+                    <form class="info__form form" id="info-form" enctype="multipart/form-data" method="GET" action="#">
+                        <div class="form__inputs input">
+                            <div class="input__line line">
+                                <label class="line__label" for="first-name">First Name*</label>
+                                <input class="line__input" id="first-name" name="first-name" placeholder="First Name" type="text" autocomplete="on" required>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="last-name">Last Name*</label>
+                                <input class="line__input" id="last-name" name="last-name" placeholder="Last Name" type="text" required>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="country">Country / Region*</label>
+                                <input class="line__input" id="country" name="country" placeholder="Country / Region" type="text" autocomplete="on" required>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="company">Company Name</label>
+                                <input class="line__input" id="company" name="company" placeholder="Company (optional)" type="text" autocomplete="on">
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="address">Street Address*</label>
+                                <input class="line__input" id="address" name="address" placeholder="House number and street name" type="text" autocomplete="on" required>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="apartment">Apt, suite, unit</label>
+                                <input class="line__input" id="apartment" name="apartment" placeholder="apartment, suite, unit, etc. (optional)" type="text">
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="city">City*</label>
+                                <input class="line__input" id="city" name="city" placeholder="Town / City" type="text"  required>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="list">State*</label>
+                                <select class="line__input" id="list" name="list">
+                                    <option class="line__input-value" value="01">State</option>
+                                    <option class="line__input-value" value="02">State 1</option>
+                                    <option class="line__input-value" value="03">State 2</option>
+                                    <option class="line__input-value" value="04">State 3</option>
+                                </select>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="phone">Phone*</label>
+                                <input class="line__input" id="phone" name="phone" placeholder="Phone" type="tel" autocomplete="on" required>
+                            </div>
+                            <div class="input__line line">
+                                <label class="line__label" for="postcode">Postal Code*</label>
+                                <input class="line__input" id="postcode" name="postcode" placeholder="Postal Code" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form__textarea ta">
+                            <label class="ta__label" for="message">Delivery Instruction</label>
+                            <textarea class="ta__input" id="message" name="message" placeholder="Delivery Instruction"></textarea>
+                        </div>
+                        <div class="form__checkboxes">
+                            <div class="form__checkbox checkbox">
+                                <input class="checkbox__input" checked id="check-1" name="ship" type="checkbox">
+                                <label class="checkbox__label" for="check-1">Set as default shipping address</label>
+                            </div>
+                            <div class="form__checkbox checkbox">
+                                <input class="checkbox__input" id="check-2" name="bill" type="checkbox">
+                                <label class="checkbox__label" for="check-2">Set as default billing address</label>
+                            </div>
+                        </div>
+                        <div class="form__buttons">
+                            <button class="form__button form__button--save" type="submit">Save</button>
+                            <button class="form__button form__button--cancel" type="reset">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/footer/lviv_logo.png" alt="Lviv logo"></a>
+                </div>
+                <div class="footer__copyright">
+                    <p>2023 <a href="#">Wasileuss</a> All rights reserved.</p>
+                </div>
+                <div class="footer__info">
+                    <p>Перевірено: <a target="_blank" href="https://validator.w3.org">validator.w3.org</a></p>
+                    <p>BEM Validator: <a href="https://nglazov.github.io/bem-validator-page/" target="_blank">bem-validator</a></p>
+                    <p class="footer__validator">
+                        <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                            <img
+                                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                alt="Правильний CSS!">
+                        </a>
+                    </p>           
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
