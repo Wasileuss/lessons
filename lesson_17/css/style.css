@@ -398,7 +398,7 @@ html {
 
 .rings__img {
     width: 100%;
-    transition: scale .3s ease 0s;
+    transition: transform .5s ease 0s;
 }
 
 .rings__info {
@@ -469,12 +469,12 @@ html {
     .arrow__right:hover{
         background: url('../img/icons/arr-right.svg');
     }
-    .rings__img:hover{
-        transform: scale(1.03);
-    }
     .rings__box:hover{
         box-shadow: 0 0 10px #F55529;
         border-radius: 10px;
+    }
+    .rings__box:hover .rings__img{
+        transform: scale(1.03);
     }
     .rings__title:hover{
         color: #F55529;
