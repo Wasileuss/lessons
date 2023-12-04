@@ -340,6 +340,14 @@ html {
     .block-2__filters {
         column-gap: 20px;
     }
+    .product__description,
+    .article__description {
+        flex: 1 1 290px;
+    }
+    .product__link,
+    .article__link {
+        width: 100%;
+    }
 }
 
 /* ------ Block - 3 ------- */
