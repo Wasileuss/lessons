@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<title>Lesson 18 Layout 1</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__logo">Pretty Stones</div>
+					<div class="menu">
+						<div class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item--active">
+									<a href="#" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Shop</a>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="#" class="menu__link">Product</a>
+									<div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product #1</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product #2</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product #3</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Product #4</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item  menu__item--parent">
+									<a href="#" class="menu__link">Pages</a>
+                                    <div class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Page #1</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Page #2</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Page #3</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Page #4</a>
+											</li>
+                                            <li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Page #5</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__actions actions-header">
+						<a href="#" class="actions-header__item">
+							<img src="img/favorite.png" alt="favorite">
+							<span>2</span>
+						</a>
+						<a href="#" class="actions-header__item">
+							<img src="img/cart.png" alt="cart">
+							<span>7</span>
+						</a>
+						<button class="icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__body">
+							<h1 class="hero__title">Jewellery Collection</h1>
+							<a href="#" class="hero__button">Shop Now</a>
+						</div>
+						<div class="hero__image">
+							<img class src="img/hero/hero-1.webp" alt="Image">
+						</div>
+						<div class="hero__content content-hero">
+							<div class="content-hero__text">
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+							</div>
+							<div class="content-hero__item">Handcrafted <br> & ethically Sources</div>
+						</div>
+					</div>
+                    <div class="hero__decors">
+                        <div class="hero__decor left">
+                            <div class="left__inner">
+                                <img src="img/hero/hero-2.webp" alt="Girl">
+                            </div></div>
+                        <div class="hero__decor right">
+                            <div class="right__inner">
+                                <img src="img/hero/hero-3.webp" alt="Girl">
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                <a class="page__button" href="maket-2.html">
+                    <span>Layout 2</span>
+                </a>
+			</main>
+			<footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__logo">
+                        <a href="#"><img src="img/footer/lviv_logo.png" alt="Lviv logo"></a>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>2023 <a href="#">Wasileuss</a> All rights reserved.</p>
+                    </div>
+                    <div class="footer__info">
+                        <p>Перевірено: <a target="_blank" href="https://validator.w3.org">validator.w3.org</a></p>
+                        <p>BEM Validator: <a href="https://nglazov.github.io/bem-validator-page/" target="_blank">bem-validator</a></p>
+                        <p class="footer__validator">
+                            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                                <img
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                    alt="Правильний CSS!">
+                            </a>
+                        </p>           
+                    </div>
+                </div>
+            </footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
