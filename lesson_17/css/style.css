@@ -147,7 +147,7 @@ html {
     color: var(--color-black);
     font-family: var(--ff-corm);
     /* font-size: 24px; */
-    font-size: calc(18px + 6 * (100vw / 1200));
+    font-size: calc(16px + 6 * (100vw / 1200));
     font-weight: 700;
     line-height: 1.4;
 }
@@ -320,16 +320,30 @@ html {
     }
 }
 
+@media screen and (max-width: 991.98px) {
+    .product__info,
+    .article__info {
+        align-items: center;
+    }
+    .product__title,
+    .article__title {
+        text-align: center;
+    }
+
+}
+
 @media screen and (max-width: 767.98px) {
     .article__description {
         flex-wrap: wrap;
-        
     }
     .block-2__articles {
         --col: 2;
     }
     .block-2__filters {
         column-gap: 30px;
+    }
+    .article__info {
+        align-items: center;
     }
 }
 
