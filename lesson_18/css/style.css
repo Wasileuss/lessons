@@ -755,7 +755,7 @@ html {
 .design__buttons {
     display: flex;
     align-items: center;
-    column-gap: 45px;
+    column-gap: 15px;
 }
 
 .design__buttons a {
@@ -781,6 +781,7 @@ html {
 
 .btn__video {
     color: #0E333D;
+    padding: 12px 35px;
     text-decoration-line: underline;
     transition: transform 0.3s;
 }
@@ -881,9 +882,12 @@ html {
     .design__images {
         column-gap: 15px;
     }
-    .design__buttons {
+    /* .design__buttons {
         flex-direction: column;
         row-gap: 10px;
+    } */
+    .design__buttons a {
+        padding: 10px 30px;
     }
     .images__item:first-child {
         margin-top: 0;
