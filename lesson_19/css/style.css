@@ -549,6 +549,9 @@ body {
     .block--big .block__actions {
         width: 110px;
     }
+	.offers__block:last-child {
+        grid-column: span 12;
+    }
 }
 
 @media screen and (max-width: 575.98px) {
