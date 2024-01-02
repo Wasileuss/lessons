@@ -164,7 +164,7 @@ address {
           align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  gap: 15px;
+  gap: 10px;
 }
 @media screen and (max-width: 767.98px) {
   .header__container {
@@ -180,7 +180,15 @@ address {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+@media (max-width: 879.98px) {
+  .header__search {
+    max-width: 110px;
+  }
+}
 @media (max-width: 767.98px) {
+  .header__search {
+    max-width: 100%;
+  }
   .menu-open .header__search {
     display: none;
   }
@@ -254,19 +262,19 @@ address {
 }
 @media (max-width: 991.98px) {
   .header__search::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 12px;
   }
   .header__search::-moz-placeholder {
-    font-size: 14px;
+    font-size: 12px;
   }
   .header__search:-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 12px;
   }
   .header__search::-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 12px;
   }
   .header__search::placeholder {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .header__search::before {
