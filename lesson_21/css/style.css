@@ -1741,6 +1741,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 40px;
   gap: 8px;
 }
 .feedback__switch input {
