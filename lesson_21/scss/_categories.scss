@@ -1,0 +1,110 @@
+.categories {
+
+    &__container {
+        padding: 50px 15px;
+
+        @media (max-width: 767.98px) {
+            padding: 25px 15px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+.item {
+
+    &__img {
+        max-width: 270px;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 270 / 394;
+            transition: all 0.3s ease;
+            
+            @media (any-hover:hover) {
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        @media (any-hover:hover) {
+            &:hover {
+                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            }
+        }
+        
+    }
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.description {
+
+    &__title {
+        position: relative;
+        color: #2A2F2F;
+        font-family: $ff-caus;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.56;
+        letter-spacing: -0.715px;
+        margin-bottom: 5px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: $col-violet;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media (any-hover:hover) {
+            &:hover {
+                &::after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__text {
+        color: #7F7F7F;
+        font-family: $ff-caus;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: -0.536px;
+    }
+
+    &__link {
+        transition: transform 0.3s ease;
+
+        @media (any-hover:hover) {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
