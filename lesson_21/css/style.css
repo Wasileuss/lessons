@@ -1749,6 +1749,7 @@ address {
           appearance: none;
   display: block;
   width: 8px;
+  height: 8px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: #BEBCBD;
