@@ -1,0 +1,120 @@
+//     Titles
+
+.label {
+    display: flex;
+    position: relative;
+    color: $cl-main;
+    font-family: $ff-int;
+    font-weight: 600;
+    line-height: 1.46;
+    margin-bottom: toRem(10);
+    margin-left: toRem(18);
+    z-index: 0;
+
+    @media (max-width: $mobile-sm) {
+        font-size: toRem(16);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: toRem(11);
+        height: toRem(11);
+        top: toRem(6);
+        left: toRem(-18);
+        background-color: $cl-green;
+        flex: 0 0 toRem(11);
+    }
+}
+
+.title {
+    font-family: $ff-pop;
+    font-size: clamp(toRem(30), 5vw, toRem(40));
+    font-weight: 700;
+    line-height: 1.21;
+}
+
+//     Buttons
+
+.button {
+        font-family: $ff-cab;
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: all 0.3s;
+
+    &--blue {
+        background-color: $cl-blue;
+        color: $cl-white;
+
+        @media (any-hover: hover) {
+            &:hover {
+                border-radius: toRem(12);
+                background-color: $cl-blue-hov;
+                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            }
+
+            &:active {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &--green {
+        background-color: $cl-green;
+        color: $cl-main;
+
+        @media (any-hover: hover) {
+            &:hover {
+                border-radius: toRem(12);
+                color: $cl-white;
+                background-color: $cl-green-hov;
+                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            }
+
+            &:active {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.button-up {
+    width: toRem(50);
+    height: toRem(50);
+    background-color: #00a97f7f;
+    position: fixed;
+    right: toRem(15);
+    bottom: toRem(15);
+    border: 2px solid $cl-white;
+    border-radius: toRem(10);
+    opacity: 0;
+    transition: all 0.2s linear;
+
+    @media (any-hover: hover) {
+        &:hover {
+            transform: translateY(toRem(-10));
+        }
+    }
+
+    @media (max-width: $mobile) {
+        transform: scale(0.9);
+        
+    }
+
+    @media (max-width: $mobile-sm) {
+        transform: scale(0.8);
+        
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: toRem(25);
+        height: toRem(25);
+        border-top: 2px solid $cl-white;
+        border-left: 2px solid $cl-white;
+        top: toRem(20);
+        right: toRem(10);
+        transform: rotate(45deg);
+    }
+}
