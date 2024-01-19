@@ -1,0 +1,124 @@
+@import '_reset.scss';
+@import '_fonts.scss';
+@import '_functions.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
+
+@import '_footer.scss';
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @media (max-width: $tablet) {
+        .menu-open & {
+            overflow: hidden;
+        }
+    }
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+    background-color: $cl-white;
+    color: $cl-main;
+    font-family: $ff-int;
+    font-size: toRem(18);
+
+    @media (max-width: $mobile-sm) {
+        font-size: toRem(16);
+    }
+
+    main {
+        flex-grow: 1;
+    }
+}
+
+[class*="__container"] {
+	max-width: toRem(1250);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+//        Header
+
+.header {
+    width: 100%;
+    background-image: url('../img/footer/bg_repeat.jpg');
+    border-bottom: toRem(3) solid $cl-green;
+
+    &__title {
+        font-family: $ff-int;
+        font-weight: 700;
+        font-size: toRem(50);
+        line-height: 2;
+        text-align: center;
+        color: $cl-main;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+//        Main
+
+.page {
+
+    &__container {
+        max-width: $mobile;
+        padding: toRem(30) toRem(15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-bottom: toRem(30);
+        }
+    }
+
+    &__links {
+        font-size: toRem(30);
+        font-weight: 700;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+
+        p {
+            line-height: 1.2;
+
+            &:not(:last-child) {
+                margin-bottom: toRem(10);
+            }
+        }
+    }
+
+    &__button {
+        align-self: center;
+        padding: toRem(10) toRem(30);
+        background-color: $cl-green;
+        border-radius: toRem(10);
+        margin: toRem(30);
+    }
+}
+
+.item,
+.newItem {
+    line-height: 1.2;
+
+    &:not(:last-child) {
+        margin-bottom: toRem(5);
+    }
+}
